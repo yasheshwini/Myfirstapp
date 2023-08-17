@@ -30,7 +30,7 @@ def covid_stats():
 
     text = request.form['text']
 
-    corona_data = 'https://corona.dnsforfamily.com/graph.png?c='+text
+    corona_data = 'https://covidstats-sdbd.onrender.com/?country='+text
     print(corona_data)
     return render_template("index.html", image=corona_data, count=visitors_count)
 
